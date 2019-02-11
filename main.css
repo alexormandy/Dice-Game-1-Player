@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Staatliches");
+
+body {
+  font-family: "Bungee", cursive;
+  height: 100vh;
+  font-size: 30px;
+  text-align: center;
+  background: linear-gradient(#e66465, #9198e5);
+  font-family: "Staatliches", cursive;
+}
+
+#one {
+  color: white;
+}
+
+#faces {
+  display: none;
+}
+
+.button1 {
+  font-size: 25px;
+  height: 100px;
+  width: 200px;
+  background-color: white;
+}
