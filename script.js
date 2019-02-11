@@ -24,7 +24,7 @@ function diceNum() {
   }
 
   if (dice == 5) {
-    document.getElementById("dicepicture").src = "/./img/dice5.jpg";
+    document.getElementById("dicepicture").src = "./img/dice5.jpg";
   }
 
   if (dice == 6) {
