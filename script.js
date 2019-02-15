@@ -1,10 +1,11 @@
 let totalscores = 0;
 
 function diceNum() {
-  let dice = Math.floor(Math.random() * 6) + 1;
-  document.getElementById("dicedisplay").innerHTML = dice;
-  totalscores = +totalscores + +dice;
+  let dice = Math.floor(Math.random() * 6);
+
+  totalscores = totalscores + dice;
   document.getElementById("totalscore").innerHTML = totalscores;
+  document.getElementById("dicedisplay").innerHTML = `You rolled ${dice}`;
 
   if (dice == 1) {
     totalscores = 0;
@@ -26,7 +27,9 @@ function diceNum() {
   if (dice == 5) {
     document.getElementById("dicepicture").src = "./img/dice5.jpg";
   }
-
+  if (dice == 0) {
+    diceNum();
+  }
   if (dice == 6) {
     document.getElementById("dicepicture").src = "./img/dice6.jpg";
   } else if (totalscores >= 21) {
